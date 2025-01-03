@@ -1,0 +1,117 @@
+@import './variables';
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    background-color: $secondarycolor; /* Slightly transparent background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    backdrop-filter: blur(5px); /* Optional: Adds a slight blur effect behind the navbar */
+    -webkit-backdrop-filter: blur(5px); /* Safari support */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for background */
+}
+
+/* Add background when scrolling */
+.navbar.scrolled {
+    background-color: $secondarycolor;
+}
+
+/* Logo */
+.logo img {
+    max-height: 180px;
+    margin-left: 25px;
+}
+
+/* Navbar links */
+.navbar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    margin-left: 20px;
+}
+
+.navbar-links li a {
+    color: $maincolor;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+/* Hover effect on navbar links */
+.navbar-links li a:hover {
+    background-color: $secondarycolor;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px auto;
+}
+
+
+
+/* Responsive design for mobile screens */
+@media (max-width: 767px) {
+  
+
+    .navbar {
+        justify-content: center;
+    }
+
+    /* Navbar links */
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: $secondarycolor; 
+        backdrop-filter: blur(10px);
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-links li {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+}
+
+
