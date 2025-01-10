@@ -1,5 +1,4 @@
 /* General Styles */
-@import '//components/mixins';
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -45,15 +44,24 @@ body {
 }
 
 .navbar-links li a {
-  color: gold;
+  font-size: 1rem;
   text-decoration: none;
   padding: 10px;
   display: block;
+  color: white; /* Default color */
+  text-transform: uppercase;
+  font-weight: bold;
+  background-clip: text; /* Make the text color gradient */
+  -webkit-background-clip: text; /* Safari support */
+  color: transparent; /* Remove default text color */
+  background-image: linear-gradient(145deg, #FFD700, #ffe34d); /* Gold gradient effect */
+  transition: color 0.3s ease, background-image 0.3s ease;
 }
 
 /* Hover effect on navbar links */
 .navbar-links li a:hover {
-  background-color: #494F50;
+  background-image: linear-gradient(145deg, #ffdf33, #ccac00); /* Hover effect */
+  color: transparent; /* Ensures text stays gradient on hover */
 }
 
 /* Hamburger Menu */
@@ -66,8 +74,8 @@ body {
 
 .hamburger span {
   display: block;
-  width: 25px;
-  height: 3px;
+  width: 30px;
+  height: 7px;
   background-color: white;
   margin: 5px auto;
 }
@@ -110,7 +118,7 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #007bff;
+  background-color: gold;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -129,9 +137,39 @@ body {
 }
 
 .return-to-top:hover {
-  background-color: #0056b3;
+  background-color: #494F50;
 }
 
 .return-to-top:focus {
   outline: none;
+}
+
+button {
+  background-color: #FFD700;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  background-image: linear-gradient(145deg, #FFD700, #ffe34d);
+}
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.5);
+}
+button:hover {
+  background-image: linear-gradient(145deg, #ffdf33, #ccac00);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+button:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.page {
+  padding-top: 10vh; /* Same as navbar height to ensure the page starts below the navbar */
+  min-height: 200vh; /* Takes up the rest of the viewport height */
+  background-color: white; /* Example background color */
 }/*# sourceMappingURL=index.css.map */

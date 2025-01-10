@@ -1,9 +1,11 @@
+@import './variables';
+
 /* Style for the Return to Top button */
 .return-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #007bff;
+    background-color: $maincolor;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -22,7 +24,7 @@
 }
 
 .return-to-top:hover {
-    background-color: #0056b3;
+    background-color: $secondarycolor;
 }
 
 .return-to-top:focus {

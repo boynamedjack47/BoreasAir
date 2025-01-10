@@ -2,7 +2,6 @@
     background-color: $bgColor;
     color: white;
     border: none;
-    padding: 12px 24px; // Adjust size of button
     cursor: pointer;
     border-radius: 8px; // Rounded corners
     font-size: 1rem; // Adjust font size for readability
@@ -26,4 +25,14 @@
         transform: scale(0.98); // Slight scale down on click
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Reduce shadow on click
     }
+}
+
+// Apply gold color
+$gold: #FFD700;
+$lightGold: #FFEC8B;
+$darkGold: #FFBF00;
+
+// Example usage
+button {
+    @include button-style($gold); // Apply gold gradient
 }
