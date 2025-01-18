@@ -33,7 +33,7 @@ h1 {
 
 .plan h2 {
     font-size: 1.5rem;
-    color: #333; /* Darker color for contrast */
+    color: black; /* Darker color for contrast */
     margin-bottom: 10px;
 }
 
@@ -54,7 +54,7 @@ h1 {
     margin: 20px auto; /* Center the textbox and add spacing */
     padding: 20px; /* Inner spacing */
     max-width: 800px; /* Limit the width for readability */
-    background-color: rgba(185, 182, 182, .5);
+    background-color: rgba(185, 182, 182, .3);
     border: 1px solid #ddd; /* Light border for structure */
     border-radius: 8px; /* Rounded corners for modern design */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
