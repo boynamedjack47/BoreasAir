@@ -171,13 +171,13 @@ button:active {
 }
 
 .page {
-  padding-top: 7vh; /* Same as navbar height to ensure the page starts below the navbar */
+  padding-top: 25px; /* Same as navbar height to ensure the page starts below the navbar */
   min-height: 200vh; /* Takes up the rest of the viewport height */
   background-color: white; /* Example background color */
 }
 
 .background {
-  background-image: url(/images/background.jpg);
+  background-image: none;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
