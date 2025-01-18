@@ -107,6 +107,8 @@ body {
     padding: 15px;
   }
   .hamburger {
+    height: 50px;
+    width: 70px;
     display: block;
     position: absolute;
     right: 20px;
@@ -169,7 +171,20 @@ button:active {
 }
 
 .page {
-  padding-top: 10vh; /* Same as navbar height to ensure the page starts below the navbar */
+  padding-top: 7vh; /* Same as navbar height to ensure the page starts below the navbar */
   min-height: 200vh; /* Takes up the rest of the viewport height */
   background-color: white; /* Example background color */
+}
+
+.background {
+  background-image: url(/images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+@media (max-width: 767px) {
+  .background {
+    background-size: cover;
+  }
 }/*# sourceMappingURL=index.css.map */

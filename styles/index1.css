@@ -1,0 +1,87 @@
+.background {
+    background-image: url(/images/cloud.jpg);
+    
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 50px; */
+    padding-top: 25px;
+}
+
+.serviceplan {
+    display: flex;
+    justify-content: space-around; /* Space out the two plans */
+    align-items: flex-start; /* Align plans at the top */
+    gap: 20px; /* Add spacing between the plans */
+    padding: 20px; /* Add padding inside the container */
+    background-color: rgba(185, 182, 182, .5); /* Optional: background color for the section */
+    border-radius: 8px; /* Optional: rounded corners for modern look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+}
+
+.plan {
+    flex: 1; /* Allow both plans to take up equal space */
+    max-width: 45%; /* Control maximum width */
+    text-align: center; /* Center-align text in each plan */
+    border: 1px solid #ddd; /* Optional: border around each plan */
+    border-radius: 8px; /* Match with serviceplan's radius */
+    padding: 15px; /* Inner padding for spacing */
+    background-color: rgba(185, 182, 182, .3);
+}
+
+.plan h2 {
+    font-size: 1.5rem;
+    color: #333; /* Darker color for contrast */
+    margin-bottom: 10px;
+}
+
+.plan ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.plan ul li {
+    font-size: 1rem;
+    color: black; /* Softer color for description */
+    margin-bottom: 8px; /* Add spacing between items */
+    text-align: left; /* Align list items to the left */
+}
+
+.textbox {
+    margin: 20px auto; /* Center the textbox and add spacing */
+    padding: 20px; /* Inner spacing */
+    max-width: 800px; /* Limit the width for readability */
+    background-color: rgba(185, 182, 182, .5);
+    border: 1px solid #ddd; /* Light border for structure */
+    border-radius: 8px; /* Rounded corners for modern design */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    text-align: center; /* Center-align the text */
+}
+
+.textbox h2 {
+    font-size: 1.8rem; /* Adjust heading size */
+    color: black; /* Darker color for contrast */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.textbox p {
+    font-size: 1rem; /* Text size */
+    color: black; /* Softer text color */
+    line-height: 1.6; /* Increase spacing between lines */
+    margin: 0; /* Remove default margins */
+}
+
+
+@media (max-width: 768px) {
+    .serviceplan {
+        flex-direction: column; /* Stack plans vertically */
+        align-items: center; /* Center the stacked plans */
+    }
+    .plan {
+        max-width: 100%; /* Full width on mobile */
+        margin-bottom: 20px; /* Add spacing between plans */
+    }
+}
