@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-/* Scroll to top */
+/* Scroll to top re*/
 // JavaScript for "Return to Top" button
 
 // Wait until the DOM is fully loaded
