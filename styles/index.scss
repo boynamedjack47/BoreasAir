@@ -4,3 +4,8 @@
 @import '../components/mixins';
 @import '../components/page';
 @import '../components/background';
+
+html {
+    scroll-behavior: smooth;
+}
+

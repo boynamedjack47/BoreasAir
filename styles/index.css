@@ -171,8 +171,8 @@ button:active {
 }
 
 .page {
-  padding-top: 25px; /* Same as navbar height to ensure the page starts below the navbar */
-  min-height: 200vh; /* Takes up the rest of the viewport height */
+  padding-top: 35px; /* Same as navbar height to ensure the page starts below the navbar */
+  min-height: 100vh; /* Takes up the rest of the viewport height */
   background-color: white; /* Example background color */
 }
 
@@ -187,4 +187,7 @@ button:active {
   .background {
     background-size: cover;
   }
+}
+html {
+  scroll-behavior: smooth;
 }/*# sourceMappingURL=index.css.map */

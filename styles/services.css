@@ -1,0 +1,124 @@
+.services {
+    text-align: center;
+    padding: 20px;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.services ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Spacing between items */
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 900px; /* Center and limit the width */
+}
+
+.services li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 10px;
+    text-align: center;
+}
+
+.services li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.services a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    width: 100%;
+}
+
+.services img {
+    width: 100%;
+    height: 170px;
+    /* max-width: 150px; Limit the size of the images */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.services span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .services ul {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+
+    .services img {
+        /* max-width: 120px; Adjust image size for smaller screens */
+    }
+}
+
+/* General Styling */
+section {
+    padding: 40px 20px; /* Add spacing inside the sections */
+    margin: 20px auto; /* Add space between sections */
+    background: #f9f9f9; /* Light background color for sections */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    max-width: 900px; /* Limit the width for better readability */
+    text-align: center; /* Center-align text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover transition */
+}
+
+section:hover {
+    transform: scale(1.03); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+section h3 {
+    font-size: 1.8rem; /* Larger font for section headings */
+    color: #333; /* Dark text color */
+    margin-bottom: 15px; /* Space below the heading */
+    font-weight: bold; /* Emphasize the heading */
+}
+
+section p {
+    font-size: 1rem; /* Regular font size for paragraphs */
+    color: #555; /* Slightly lighter text color */
+    line-height: 1.6; /* Increase line spacing for readability */
+    margin: 0; /* Reset margin for paragraphs */
+}
+
+/* Add a separator line below headings */
+section h3::after {
+    content: "";
+    display: block;
+    width: 60px; /* Set the line width */
+    height: 3px; /* Set the line thickness */
+    background: #007bff; /* Accent color */
+    margin: 10px auto; /* Center the line */
+    border-radius: 5px; /* Rounded edges for the line */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        padding: 30px 15px; /* Reduce padding for smaller screens */
+    }
+
+    section h3 {
+        font-size: 1.5rem; /* Smaller headings for mobile */
+    }
+
+    section p {
+        font-size: 0.9rem; /* Slightly smaller text */
+    }
+}
