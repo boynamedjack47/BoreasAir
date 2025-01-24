@@ -110,6 +110,15 @@ section h3::after {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    html {
+        scroll-padding-top: 120px; /* Increased padding for mobile */
+      }
+
+    .services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     section {
         padding: 30px 15px; /* Reduce padding for smaller screens */
     }
