@@ -120,3 +120,40 @@ body {
         top: 10px;
     }
 }
+
+/* Phone Number Styling */
+.phone-number {
+    font-size: 1.7rem;
+    color: white;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+}
+
+.phone-number:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Hide the phone number on mobile and show the icon instead */
+.phone-number .phone-text {
+    display: inline-block;
+}
+
+.phone-number i {
+    display: none; /* Hide the icon by default */
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 767px) {
+    .phone-number .phone-text {
+        display: none; /* Hide phone number text on mobile */
+    }
+
+    .phone-number i {
+        display: inline-block; /* Show the phone icon */
+        font-size: 2rem; /* Larger icon on mobile */
+    }
+}
