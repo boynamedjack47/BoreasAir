@@ -188,6 +188,90 @@ button:active {
     background-size: cover;
   }
 }
+/* General styling for the input form */
+.input-form {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10% auto;
+  max-width: 600px;
+  width: 100%;
+}
+.input-form h1 {
+  color: black;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+label {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type=tel], input[type=email], input[type=text], select {
+  height: 40px;
+}
+
+button.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 32px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+button.submit-button:hover {
+  background-color: #45a049;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 767px) {
+  .input-form {
+    padding: 15px;
+  }
+  .form-group input, .form-group select {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+  button.submit-button {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+}
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+/* For additional styling like banner, navbar, etc., if needed */
+/* Add mobile styling for the navbar here if needed */
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Adjust this to the height of your fixed navbar */
 }/*# sourceMappingURL=index.css.map */

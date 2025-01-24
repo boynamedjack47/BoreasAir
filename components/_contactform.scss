@@ -1,0 +1,123 @@
+/* General styling for the input form */
+.input-form {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    // background-color: #3c4041;
+    background-color: #f8f8f8;
+
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10% auto;
+    max-width: 600px;
+    width: 100%;
+
+    h1 {
+        color: black;
+    }
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 5px;
+    // display: block;
+}
+
+input, select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="tel"], input[type="email"], input[type="text"], select {
+    height: 40px;
+}
+
+button.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button.submit-button:hover {
+    background-color: #45a049;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 767px) {
+    .input-form {
+        padding: 15px;
+    }
+
+    .form-group input, .form-group select {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    button.submit-button {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+    }
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+/* For additional styling like banner, navbar, etc., if needed */
+// .banner {
+//     background-color: rgba(0, 0, 0, 0.8);
+//     color: white;
+//     padding: 20px;
+//     text-align: center;
+// }
+
+// .navbar {
+//     background-color: #333;
+//     padding: 15px;
+//     position: sticky;
+//     top: 0;
+//     z-index: 10;
+// }
+
+// .navbar-links {
+//     display: flex;
+//     justify-content: center;
+//     list-style: none;
+//     padding: 0;
+// }
+
+// .navbar-links li {
+//     margin: 0 20px;
+// }
+
+// .navbar-links li a {
+//     color: white;
+//     text-decoration: none;
+//     font-size: 1rem;
+// }
+
+
+/* Add mobile styling for the navbar here if needed */

@@ -4,8 +4,11 @@
 @import '../components/mixins';
 @import '../components/page';
 @import '../components/background';
-
+@import '../components/contactform';
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Adjust this to the height of your fixed navbar */
+      
+      
 }
 
