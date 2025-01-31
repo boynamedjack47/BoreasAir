@@ -102,7 +102,7 @@ h1 {
     letter-spacing: 1px; /* Less spacing between letters for a more cohesive look */
     line-height: 1.3; /* Reduce line-height slightly for a more compact feel */
     padding: 70px 40px; /* Padding on all sides with a bit more on the sides */
-    background: linear-gradient(45deg, #ffd700, #ffd979); /* Gold gradient */
+    background: linear-gradient(45deg, #e3c25d, #e3c25d); /* Gold gradient */
     -webkit-background-clip: text; /* Gradient visible on text */
     color: transparent; /* Ensure text takes the gradient */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
@@ -116,7 +116,7 @@ h1 {
   
   h1:hover {
     transform: translateY(5px); /* Slight upward movement on hover */
-    color: #ffd700; /* Gold hover effect */
+    color: #e3c25d; /* Gold hover effect */
     text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Slight shadow on hover for focus */
   }
   

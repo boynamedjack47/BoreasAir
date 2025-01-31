@@ -131,3 +131,11 @@ section h3::after {
         font-size: 0.9rem; /* Slightly smaller text */
     }
 }
+
+.form-group1 {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    
+}

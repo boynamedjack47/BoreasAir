@@ -1,0 +1,153 @@
+/* General Page Styling */
+.page {
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #e3c25d;
+    background: #494F50;
+    text-align: center;
+}
+.content {
+    margin-top: 75px;
+}
+
+/* Hexagon Badge */
+.hexagon-badge {
+    width: 180px;
+    height: 120px;
+    background: #222;
+    color: #e3c25d;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Content Styling */
+.content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.content span {
+    color: #e3c25d;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Service List & Pricing */
+.service-description {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    text-align: left;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.service-list, .pricing {
+    flex: 1;
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.service-list h2, .pricing h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #e3c25d;
+}
+
+.service-list ul, .pricing ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service-list li, .pricing li {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Banner Section */
+.banner {
+    margin-top: 30px;
+}
+
+.banner img {
+    max-width: 200px;
+}
+
+.banner h2 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.phone-number {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #e3c25d;
+    text-decoration: none;
+}
+
+.phone-number i {
+    margin-right: 8px;
+}
+
+.banner p {
+    font-size: 1rem;
+}
+
+/* Return to Top Button */
+/* .return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #e3c25d;
+    color: #111;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.return-to-top:hover {
+    background: #e3c25d;
+} */
+
+/* Responsive */
+@media (max-width: 768px) {
+    .service-description {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hexagon-badge {
+        width: 150px;
+        font-size: 0.9rem;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+}
+
+/* .form-group {
+    width: 50%;
+} */
+
+.input-form {
+    margin: 0% auto;
+}

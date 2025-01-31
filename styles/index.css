@@ -54,13 +54,13 @@ body {
   background-clip: text; /* Make the text color gradient */
   -webkit-background-clip: text; /* Safari support */
   color: transparent; /* Remove default text color */
-  background-image: linear-gradient(145deg, #FFD700, #ffe34d); /* Gold gradient effect */
+  background-image: linear-gradient(145deg, #e3c25d, #eedb9e); /* Gold gradient effect */
   transition: color 0.3s ease, background-image 0.3s ease;
 }
 
 /* Hover effect on navbar links */
 .navbar-links li a:hover {
-  background-image: linear-gradient(145deg, #ffdf33, #ccac00); /* Hover effect */
+  background-image: linear-gradient(145deg, #ebd288, #dbb232); /* Hover effect */
   color: transparent; /* Ensures text stays gradient on hover */
 }
 
@@ -118,7 +118,7 @@ body {
 /* Phone Number Styling */
 .phone-number {
   font-size: 1.7rem;
-  color: white;
+  color: #e3c25d;
   text-decoration: none;
   margin: 0 auto;
   padding: 10px 20px;
@@ -155,7 +155,7 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: gold;
+  background-color: #e3c25d;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -182,7 +182,7 @@ body {
 }
 
 button {
-  background-color: #FFD700;
+  background-color: #e3c25d;
   color: white;
   border: none;
   cursor: pointer;
@@ -190,14 +190,14 @@ button {
   font-size: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
-  background-image: linear-gradient(145deg, #FFD700, #ffe34d);
+  background-image: linear-gradient(145deg, #e3c25d, #eedb9e);
 }
 button:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.5);
+  box-shadow: 0 0 0 3px rgba(227, 194, 93, 0.5);
 }
 button:hover {
-  background-image: linear-gradient(145deg, #ffdf33, #ccac00);
+  background-image: linear-gradient(145deg, #ebd288, #dbb232);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 button:active {
