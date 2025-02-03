@@ -6,25 +6,28 @@
     background: white;
     text-align: center;
 }
+
 .content {
     margin-top: 75px;
 }
 
 /* Hexagon Badge */
 .hexagon-badge {
-    width: 180px;
-    height: 120px;
+    width: 240px; /* Increased from 180px */
+    height: 160px; /* Increased from 120px */
     background: #494F50;
     color: #e3c25d;
     font-weight: bold;
-    padding: 20px;
+    padding: 30px; /* Slightly increased padding for better spacing */
     text-align: center;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     margin: 20px auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.5rem; /* Increase text size slightly for better scaling */
 }
+
 
 /* Content Styling */
 .content h1 {
@@ -47,32 +50,40 @@
     display: flex;
     justify-content: center;
     gap: 40px;
-    text-align: left;
+    text-align: center;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 1000px;
+    width: 90%;
 }
 
 .service-list, .pricing {
     flex: 1;
     background: #494F50;
-    padding: 20px;
+    padding: 30px;
     border-radius: 8px;
+    font-size: 1.2rem;
+    min-width: 65%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .service-list h2, .pricing h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
     color: #e3c25d;
 }
 
 .service-list ul, .pricing ul {
     list-style: none;
     padding: 0;
+    width: 100%;
 }
 
 .service-list li, .pricing li {
-    font-size: 1rem;
-    margin: 5px 0;
+    font-size: 1.2rem;
+    margin: 10px 0;
 }
 
 /* Banner Section */
@@ -104,30 +115,12 @@
     font-size: 1rem;
 }
 
-/* Return to Top Button */
-/* .return-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #e3c25d;
-    color: #111;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    font-size: 1.5rem;
-    border-radius: 50%;
-    transition: 0.3s;
-}
-
-.return-to-top:hover {
-    background: #e3c25d;
-} */
-
 /* Responsive */
 @media (max-width: 768px) {
     .service-description {
         flex-direction: column;
         text-align: center;
+        width: 100%;
     }
 
     .hexagon-badge {
@@ -142,63 +135,14 @@
     .content p {
         font-size: 1rem;
     }
-}
-
-/* .form-group {
-    width: 50%;
-} */
-
-.input-form {
-    margin: 0% auto;
-}
-
-/* Service List & Pricing */
-.service-description {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    text-align: left;
-    margin: 20px auto;
-    max-width: 1000px; /* Increase the max width */
-    width: 90%; /* Make it take more space on the page */
-}
-
-.service-list, .pricing {
-    flex: 1;
-    background: #494F50;
-    padding: 30px; /* Increase padding */
-    border-radius: 8px;
-    font-size: 1.2rem; /* Make text slightly bigger */
-    min-width: 45%; /* Ensure they take up more space */
-}
-
-.service-list h2, .pricing h2 {
-    font-size: 1.8rem; /* Make headings larger */
-    margin-bottom: 15px;
-    color: #e3c25d;
-}
-
-.service-list ul, .pricing ul {
-    list-style: none;
-    padding: 0;
-}
-
-.service-list li, .pricing li {
-    font-size: 1.2rem; /* Make list items larger */
-    margin: 10px 0; /* Add more spacing */
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .service-description {
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-    }
 
     .service-list, .pricing {
         width: 90%;
         min-width: unset;
         margin: 0 auto;
     }
+}
+
+.input-form {
+    margin: 0% auto;
 }

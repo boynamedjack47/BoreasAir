@@ -137,5 +137,10 @@ section h3::after {
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
-    
+
+}
+
+.services h2 {
+    color: #e3c25d;
+    margin-top: 50px;
 }
