@@ -3,7 +3,7 @@
     padding: 20px;
     font-family: 'Poppins', sans-serif;
     color: #e3c25d;
-    background: #494F50;
+    background: white;
     text-align: center;
 }
 .content {
@@ -14,7 +14,7 @@
 .hexagon-badge {
     width: 180px;
     height: 120px;
-    background: #222;
+    background: #494F50;
     color: #e3c25d;
     font-weight: bold;
     padding: 20px;
@@ -54,7 +54,7 @@
 
 .service-list, .pricing {
     flex: 1;
-    background: #222;
+    background: #494F50;
     padding: 20px;
     border-radius: 8px;
 }
@@ -150,4 +150,55 @@
 
 .input-form {
     margin: 0% auto;
+}
+
+/* Service List & Pricing */
+.service-description {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    text-align: left;
+    margin: 20px auto;
+    max-width: 1000px; /* Increase the max width */
+    width: 90%; /* Make it take more space on the page */
+}
+
+.service-list, .pricing {
+    flex: 1;
+    background: #494F50;
+    padding: 30px; /* Increase padding */
+    border-radius: 8px;
+    font-size: 1.2rem; /* Make text slightly bigger */
+    min-width: 45%; /* Ensure they take up more space */
+}
+
+.service-list h2, .pricing h2 {
+    font-size: 1.8rem; /* Make headings larger */
+    margin-bottom: 15px;
+    color: #e3c25d;
+}
+
+.service-list ul, .pricing ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service-list li, .pricing li {
+    font-size: 1.2rem; /* Make list items larger */
+    margin: 10px 0; /* Add more spacing */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .service-description {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .service-list, .pricing {
+        width: 90%;
+        min-width: unset;
+        margin: 0 auto;
+    }
 }
