@@ -10,7 +10,7 @@ body {
   position: fixed;
   height: 10%;
   width: 100%;
-  background-color: black;
+  background-color: #3c4041;
   display: flex;
   justify-content: space-between;
   align-items: center;
