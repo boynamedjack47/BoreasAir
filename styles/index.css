@@ -10,7 +10,7 @@ body {
   position: fixed;
   height: 10%;
   width: 100%;
-  background-color: #494F50; /* Slightly transparent background */
+  background-color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
