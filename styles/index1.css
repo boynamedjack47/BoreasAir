@@ -120,4 +120,6 @@ h1 {
     text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Slight shadow on hover for focus */
   }
   
-  
+  .reviewwidget {
+    background-color: #3c4041;
+  }
