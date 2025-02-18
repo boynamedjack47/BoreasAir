@@ -108,29 +108,7 @@ section h3::after {
     border-radius: 5px; /* Rounded edges for the line */
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    html {
-        scroll-padding-top: 120px; /* Increased padding for mobile */
-      }
 
-    .services {
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
-    }
-    section {
-        padding: 30px 15px; /* Reduce padding for smaller screens */
-    }
-
-    section h3 {
-        font-size: 1.5rem; /* Smaller headings for mobile */
-    }
-
-    section p {
-        font-size: 0.9rem; /* Slightly smaller text */
-    }
-}
 
 .form-group1 {
     width: 100%;
@@ -168,3 +146,31 @@ section h3::after {
 
 
   
+/* Responsive Design */
+@media (max-width: 768px) {
+    html {
+        scroll-padding-top: 120px; /* Increased padding for mobile */
+      }
+
+    .services {
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+    }
+    section {
+        padding: 30px 15px; /* Reduce padding for smaller screens */
+    }
+
+    section h3 {
+        font-size: 1.5rem; /* Smaller headings for mobile */
+    }
+
+    section p {
+        font-size: 0.9rem; /* Slightly smaller text */
+    }
+    .input-form {
+        max-height: 900px; /* Prevents it from growing too tall */
+    
+    }
+    
+}
