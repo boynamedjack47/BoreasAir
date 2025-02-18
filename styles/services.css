@@ -148,3 +148,14 @@ section h3::after {
 .page {
     background-color: #3c4041;
 }
+
+.content1 {
+    display: flex;
+}
+
+.input-form {
+    
+    margin: 2% auto;
+    justify-content: initial;
+    margin-top: 20px;
+}
