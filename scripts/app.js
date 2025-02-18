@@ -42,3 +42,4 @@ document.querySelectorAll(".faq-question").forEach(item => {
         answer.style.display = answer.style.display === "block" ? "none" : "block";
     });
 });
+
