@@ -162,7 +162,7 @@ section h3::after {
 
 .input-form {
     max-height: 750px; /* Prevents it from growing too tall */
-    overflow-y: auto; /* Enables scrolling if necessary */
+
 }
 
 
