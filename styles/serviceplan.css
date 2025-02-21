@@ -15,7 +15,8 @@
 .hexagon-badge {
     width: 240px; /* Increased from 180px */
     height: 160px; /* Increased from 120px */
-    background: #494F50;
+    /* background: #494F50; */
+    background: #3c4041;
     color: #e3c25d;
     font-weight: bold;
     padding: 30px; /* Slightly increased padding for better spacing */
@@ -58,7 +59,8 @@
 
 .service-list, .pricing {
     flex: 1;
-    background: #494F50;
+    /* background: #494F50; */
+    background: #3c4041;
     padding: 30px;
     border-radius: 8px;
     font-size: 1.2rem;
@@ -67,6 +69,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  border: solid;
 }
 
 .service-list h2, .pricing h2 {
@@ -102,7 +105,7 @@
 
 .phone-number {
     display: inline-block;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     color: #e3c25d;
     text-decoration: none;
 }
