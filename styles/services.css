@@ -174,3 +174,49 @@ section h3::after {
     }
     
 }
+
+.faq-container, .service-details {
+width: 750px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+ margin-bottom: 303px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.faq-question, .service-title {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-answer, .service-content {
+    display: none;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.faq-question::after, .service-title::after {
+    content: "+";
+    font-size: 20px;
+}
+
+.faq-item.active .faq-question::after, 
+.faq-item.active .service-title::after {
+    content: "-";
+}
+
+.faq-container h1 {
+    justify-content: center;
+    text-align: center;
+}
