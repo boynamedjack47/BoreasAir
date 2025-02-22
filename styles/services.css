@@ -170,8 +170,15 @@ section h3::after {
     }
     .input-form {
         max-height: 900px; /* Prevents it from growing too tall */
-    
+    width: 550px;
     }
+    
+    .content1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+   
     
 }
 
@@ -235,3 +242,13 @@ width: 750px;
 .faq-question.open::after {
     content: "-"; /* Change to minus when open */
 }
+@media (max-width: 768px) {
+
+
+    .service-details {
+        width: 450px;
+    }
+    .input-form {
+        width: 470px;
+    }
+ }
