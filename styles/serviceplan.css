@@ -149,3 +149,8 @@
 .input-form {
     margin: 0% auto;
 }
+
+.intro {
+    display: flex;
+    text-align: center;
+}
