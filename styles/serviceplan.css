@@ -2,8 +2,10 @@
 .page {
     padding: 20px;
     font-family: 'Poppins', sans-serif;
-    color: #e3c25d;
-    background: #3c4041;
+    /* color: #e3c25d; */
+    color: black;
+    /* background: #3c4041; */
+    background-color: white;
     text-align: center;
 }
 
@@ -60,7 +62,8 @@
 .service-list, .pricing {
     flex: 1;
     /* background: #494F50; */
-    background: #3c4041;
+    /* background: #3c4041; */
+    background-color: white;
     padding: 30px;
     border-radius: 8px;
     font-size: 1.2rem;
@@ -75,7 +78,8 @@
 .service-list h2, .pricing h2 {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: #e3c25d;
+    /* color: #e3c25d; */
+    color: black;
 }
 
 .service-list ul, .pricing ul {
