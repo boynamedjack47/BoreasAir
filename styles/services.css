@@ -193,7 +193,9 @@ width: 750px;
  flex-direction: column;
  display: flex
 ;
- gap: 50px;
+ gap: 55px;
+  margin-top: 21px;
+ /* height: 750px; */
 }
 
 .faq-item {
