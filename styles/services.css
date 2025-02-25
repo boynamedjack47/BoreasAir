@@ -144,6 +144,9 @@ section h3::after {
     max-height: 750px; /* Prevents it from growing too tall */
 
 }
+.input-form h1 {
+text-align: center;
+}
 
 
 
@@ -250,9 +253,9 @@ width: 750px;
 
 
     .service-details {
-        width: 450px;
+        width: 300px;
     }
     .input-form {
-        width: 470px;
+        width: 350px;
     }
  }
