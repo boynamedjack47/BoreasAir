@@ -87,7 +87,7 @@ h1 {
     }
     h1 {
         font-size: 1.75rem; 
-        padding: 50px 40px;
+        padding: 30px 40px;
     }
   
 }
@@ -214,4 +214,19 @@ p {
 
 .hamburger span {
     background: white; /* Ensures menu lines are visible */
+}
+
+
+@media (max-width: 768px) { 
+
+
+    .hero-logo {
+        width: 250px;
+     }
+
+     h1 {
+        padding: 0px;
+     }
+
+
 }
