@@ -151,6 +151,20 @@ body {
     margin-right: 20px;
   }
 }
+@media (max-width: 767px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .hamburger {
+    position: relative; /* Remove absolute positioning */
+    top: 0;
+    right: 0;
+  }
+  .phone-number {
+    margin-right: 0; /* Let flexbox handle spacing */
+  }
+}
 /* Style for the Return to Top button */
 .return-to-top {
   position: fixed;
