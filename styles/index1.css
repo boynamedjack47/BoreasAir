@@ -191,7 +191,7 @@ p {
     top: 0;
     left: 0;
     background-color: #3c4041; /* Updated background color */
-    padding: 0px 30px;
+    padding: -1px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -203,16 +203,14 @@ p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-links li a {
+/* .navbar-links li a {
     font-weight: bold;
    
     text-transform: uppercase;
     transition: 0.3s ease;
-}
+} */
 
-.navbar-links li a:hover {
-    color: #ff6600; /* Highlight on hover */
-}
+
 
 .hamburger span {
     background: white; /* Ensures menu lines are visible */
