@@ -230,3 +230,15 @@ p {
 
 
 }
+
+.reviewwidget {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 2.0s ease-out;
+  }
+  
+  .reviewwidget.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  

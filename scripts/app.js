@@ -131,3 +131,26 @@ document.addEventListener("DOMContentLoaded", function () {
         navbar.classList.remove('scrolled');
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const reviewWidget = document.querySelector('.reviewwidget');
+  
+    const observerOptions = {
+      threshold: 0.3
+    };
+  
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target); // Remove observer after animation fires
+        }
+      });
+    }, observerOptions);
+  
+    if(reviewWidget) {
+      observer.observe(reviewWidget);
+    }
+  });
+  
