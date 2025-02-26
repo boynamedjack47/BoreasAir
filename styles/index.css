@@ -21,9 +21,9 @@ body {
 }
 
 /* Add background when scrolling */
-.navbar.scrolled {
+/* .navbar.scrolled {
   background-color: #494F50;
-}
+} */
 
 /* Logo */
 .logo img {

@@ -154,3 +154,17 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
   
+
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    const navLinks = document.querySelectorAll('.navbar-links li a');
+
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+        navLinks.forEach(link => link.classList.add('active')); // Add active style on scroll
+    } else {
+        navbar.classList.remove('scrolled');
+        navLinks.forEach(link => link.classList.remove('active')); // Remove active style
+    }
+});
+
