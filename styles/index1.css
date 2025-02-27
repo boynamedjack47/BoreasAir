@@ -225,7 +225,7 @@ p {
 
 @media (max-width: 768px) { 
     .hero-content {
-        margin-bottom: 15px;
+        margin-bottom: 40px;
     }
 
     .hero-logo {
@@ -235,6 +235,7 @@ p {
      h1 {
         padding: 0px;
         margin-top: 10px;
+        text-align: center;
      }
 
 
