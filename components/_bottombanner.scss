@@ -1,0 +1,45 @@
+.bottom-banner {
+    background-color: #3c4041; /* Dark background for the banner */
+    color: white; /* White text color */
+    padding: 10px 0px; /* Padding to give some space around the text and icon */
+    display: flex;
+    align-items: center; /* Aligns the content vertically */
+    bottom: 0; /* Positions the banner at the bottom of the page */
+    width: 100%; /* Makes the banner span the entire width */
+    display: contents;
+
+ 
+}
+
+.bottom-banner h3 {
+    margin-left: 5px;
+}
+
+.bottom-banner h1 {
+    margin: 0; /* Removes margin around the header */
+}
+
+.instagram-link {
+    font-size: 2rem; /* Instagram icon size */
+    color: #e3c25d; /* Icon color */
+    text-decoration: none; /* Removes underline */
+    display:flex;
+    justify-content: flex-end;
+    margin-left: 10px;
+}
+
+.instagram-link:hover {
+    color: #b4922f; /* Instagram brand color on hover */
+}
+
+h3 {
+    color: #e3c25d;
+}
+@media (max-width: 767px) {
+
+    .bottom-banner {
+        width: 100%;
+
+        padding: 15px 0px;
+    }
+}

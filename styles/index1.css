@@ -205,7 +205,7 @@ p {
 
 .navbar-links {
     background-color: rgba(60, 64, 65, 0.90); /* Slight transparency on scroll */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.0); */
 
 }
 
@@ -222,6 +222,11 @@ p {
     background: white; /* Ensures menu lines are visible */
 }
 
+.labels {
+    display: flex;
+    gap: 15px;
+    margin-left: 5px;
+}
 
 @media (max-width: 768px) { 
     .hero-content {
