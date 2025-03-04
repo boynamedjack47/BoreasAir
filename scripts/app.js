@@ -168,3 +168,46 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// document.addEventListener("DOMContentLoaded", function () {
+//   const popup = document.getElementById("promoPopup");
+//   const closeBtn = document.querySelector(".close");
+
+//   // Show the popup when the page loads
+//   setTimeout(() => {
+//       popup.style.display = "flex";
+//   }, 1000); // Show after 1 second
+
+//   // Close the popup when clicking the close button
+//   closeBtn.addEventListener("click", () => {
+//       popup.style.display = "none";
+//   });
+
+//   // Close when clicking outside the popup
+//   window.addEventListener("click", (e) => {
+//       if (e.target === popup) {
+//           popup.style.display = "none";
+//       }
+//   });
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const promoPopup = document.getElementById("promoPopup");
+  const closeBtn = document.querySelector(".close-btn");
+
+  // Show the promo popup after 1 second delay
+  setTimeout(() => {
+      promoPopup.classList.add("show");
+  }, 1000);
+
+  // Close the popup when clicking the X button
+  closeBtn.addEventListener("click", function () {
+      promoPopup.classList.remove("show");
+  });
+
+  // Close when clicking outside the modal
+  window.addEventListener("click", function (e) {
+      if (e.target === promoPopup) {
+          promoPopup.classList.remove("show");
+      }
+  });
+});
